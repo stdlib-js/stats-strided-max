@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`955aee8`](https://github.com/stdlib-js/stdlib/commit/955aee86dd40a98dc992ce091f17f0a2c6136b75) - **refactor:** update paths _(by Gururaj Gurram)_
 -   [`397c385`](https://github.com/stdlib-js/stdlib/commit/397c3851d5cd1ee11dd01de2eb98efb236b1ce2e) - **feat:** add `stats/strided/max` _(by Gururaj Gurram)_
 
 </details>
