@@ -41,38 +41,32 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-strided-max
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-max = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-max@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var max = require( 'path/to/vendor/umd/stats-strided-max/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-max@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.max;
-})();
-</script>
+var max = require( '@stdlib/stats-strided-max' );
 ```
 
 #### max( N, x, strideX )
@@ -161,14 +155,9 @@ var v = max.ndarray( 4, x, 2, 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-max@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var max = require( '@stdlib/stats-strided-max' );
 
 var x = discreteUniform( 10, -50, 50, {
     'dtype': 'float64'
@@ -177,11 +166,6 @@ console.log( x );
 
 var v = max( x.length, x, 1 );
 console.log( v );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -231,7 +215,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -244,8 +228,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-strided-max.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-strided-max
 
-[test-image]: https://github.com/stdlib-js/stats-strided-max/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/stats-strided-max/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/stats-strided-max/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/stats-strided-max/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-strided-max/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-strided-max?branch=main
@@ -257,8 +241,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -281,17 +265,17 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor/tree/umd
+[@stdlib/array/base/accessor]: https://github.com/stdlib-js/array-base-accessor
 
 <!-- <related-links> -->
 
-[@stdlib/stats/strided/dmax]: https://github.com/stdlib-js/stats-strided-dmax/tree/umd
+[@stdlib/stats/strided/dmax]: https://github.com/stdlib-js/stats-strided-dmax
 
-[@stdlib/stats/strided/min]: https://github.com/stdlib-js/stats-strided-min/tree/umd
+[@stdlib/stats/strided/min]: https://github.com/stdlib-js/stats-strided-min
 
-[@stdlib/stats/strided/nanmax]: https://github.com/stdlib-js/stats-strided-nanmax/tree/umd
+[@stdlib/stats/strided/nanmax]: https://github.com/stdlib-js/stats-strided-nanmax
 
-[@stdlib/stats/strided/smax]: https://github.com/stdlib-js/stats-strided-smax/tree/umd
+[@stdlib/stats/strided/smax]: https://github.com/stdlib-js/stats-strided-smax
 
 <!-- </related-links> -->
 
