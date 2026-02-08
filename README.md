@@ -48,13 +48,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import max from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-max@esm/index.mjs';
+import max from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-max@v0.1.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-max@esm/index.mjs';
+import { ndarray } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-max@v0.1.1-esm/index.mjs';
 ```
 
 #### max( N, x, strideX )
@@ -150,7 +150,7 @@ var v = max.ndarray( 4, x, 2, 1 );
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import max from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-max@esm/index.mjs';
+import max from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-strided-max@v0.1.1-esm/index.mjs';
 
 var x = discreteUniform( 10, -50, 50, {
     'dtype': 'float64'
